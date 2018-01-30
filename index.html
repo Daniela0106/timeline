@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+    <head>
+        <script src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    </head>
+    <body>
+        <div id="timeline">
+            <canvas id="topCanvas" style="border:1px solid #d3d3d3;">
+                Your browser does not support the HTML5 canvas tag.
+            </canvas>
+            <div class="gray-bar">
+                <div class="container">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <canvas class="bottom-canvas" id="bottomCanvas" style="border:1px solid #d3d3d3;">
+                Your browser does not support the HTML5 canvas tag.
+            </canvas>
+        </div>
+        <div class="init-fields" id="initial-fields">
+            <form id="timeline-form">
+                <h3>
+                    Timeline
+                </h3>
+                <label>Length of one period in seconds:</label>
+                <input type="text" name="lengthOfPeriod"
+                       id="lengthOfPeriod" placeholder="Length of period" required>
+                <br>
+                <br>
+                <h3>Actions</h3>
+                <label>Input the action time and the team who made it:</label>
+                <br>
+                <input type="text" name="time1" placeholder="Time in seconds">
+                <input type="text" name="team1" placeholder="Home or Away">
+                <br>
+                <input type="text" name="time2" placeholder="Time in seconds">
+                <input type="text" name="team2" placeholder="Home or Away">
+                <br>
+                <input type="text" name="time3" placeholder="Time in seconds">
+                <input type="text" name="team3" placeholder="Home or Away">
+                <br>
+                <input type="text" name="time4" placeholder="Time in seconds">
+                <input type="text" name="team4" placeholder="Home or Away">
+                <br>
+                <input type="text" name="time5" placeholder="Time in seconds">
+                <input type="text" name="team5" placeholder="Home or Away">
+                <br>
+                <input type="text" name="time6" placeholder="Time in seconds">
+                <input type="text" name="team6" placeholder="Home or Away">
+                <br>
+            </form>
+            <button type="button" id="timeline-form-button" onclick="validateForm()">Submit</button>
+        </div>
+    </body>
+</html>
